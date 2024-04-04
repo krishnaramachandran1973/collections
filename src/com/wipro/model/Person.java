@@ -36,7 +36,6 @@ public class Person implements Comparable<Person> {
 		} else {
 			return 0;
 		}
-
 	}
 	
 	@Override

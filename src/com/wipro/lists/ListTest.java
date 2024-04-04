@@ -1,54 +1,11 @@
 package com.wipro.lists;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.function.Predicate;
-
-import com.wipro.model.Person;
-
-@FunctionalInterface
-interface Player {
-	// signature
-	// function descriptor
-	void play(String name);
-	// void play(String)
-}
-
-
-
-class ClassName implements Player {
-	@Override
-	public void play(String name) {
-		System.out.println(name + " is playing");
-
-	}
-}
 
 public class ListTest {
 	public static void main(String[] args) {
-		// Anonymous imple
-		Player player = new Player() {			
-			@Override
-			public void play(String name) {
-				System.out.println(name + " is playing");
-				
-			}
-		};
-		
-		Player player2 = (crap) -> System.out.println(crap +" is playing");
-		
-	
-		
-		
-		// Create a List and add a few elements
-		// backed by an array
-		// linkedlist
-		// [data |addres ] -> [data | addres] -->  [ | ]     --> [ | ] -> [ | ]
-		// [0] [1]  [2] [3] [4]
-		// [0] [] [] [0]
-		// LinkedList
-		List<String> list = new LinkedList<>();
+		List<String> list = new ArrayList<>();
 
 		list.add("John");
 		list.add("Richard");
@@ -70,7 +27,7 @@ public class ListTest {
 		// Create a List using the static factory method of()
 		List<String> names = List.of("Li", "Xi", "Bo", "Da", "Fa", "Bo");
 		System.out.println("List using List.of() method: " + names);
-		
+
 		list.sort(null);
 	}
 

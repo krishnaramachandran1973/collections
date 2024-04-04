@@ -36,7 +36,7 @@ public class SetTest {
 		Set<String> s4 = Set.of("Tom", "Harry");
 		Set<Person> p = Set.of(new Person(1,"Name"));
 		//s4.add("Trump");
-		// unmodifiable
+		// unmodifiable - view
 		Set<String> unmodifiableSet = Collections.unmodifiableSet(s1);
 	}
 

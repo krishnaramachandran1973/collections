@@ -43,6 +43,5 @@ public class NavigableSetTest {
 		// Since the set is empty, polling will return null
 		System.out.println("pollFirst(): " + ns.pollFirst());
 		System.out.println("pollLast(): " + ns.pollLast());
-
 	}
 }

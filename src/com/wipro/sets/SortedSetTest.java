@@ -27,7 +27,7 @@ public class SortedSetTest {
 		for (Person person : persons) {
 			System.out.println(person);
 		}
-		// persons.forEach(person -> System.out.println(person));
+		persons.forEach(person -> System.out.println(person));
 	}
 
 }
